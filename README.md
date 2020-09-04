@@ -1,9 +1,12 @@
 # Adfly API
 
+[![Downloads](https://pepy.tech/badge/adfly-api)](https://pepy.tech/project/adfly-api)
+[![Downloads](https://pepy.tech/badge/adfly-api/month)](https://pepy.tech/project/adfly-api/month)
+[![Downloads](https://pepy.tech/badge/adfly-api/week)](https://pepy.tech/project/adfly-api/week)
+
 Unofficial Adfly API Python Wrapper
 
 ## Installation
-
 `pip install adfly-api`
 
 ## Examples
@@ -13,9 +16,9 @@ from adfly import AdflyApi
 
 #Initialize
 api = AdflyApi(
-      secret_key='xxxxxxxxxx',
-      public_key='xxxxxxxxxx',
       user_id=12345678,
+      public_key='xxxxxxxxxx',
+      secret_key='xxxxxxxxxx',
 )
 
 # Url Groups examples.

@@ -5,7 +5,7 @@ README = open('README.md').read()
 
 setuptools.setup(
     name='adfly-api',
-    version='1.0.1',
+    version='1.0.2',
     url='https://github.com/modbender/adfly-api',
     description='Unofficial Adfly API wrapper',
     long_description=README,

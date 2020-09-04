@@ -157,7 +157,7 @@ class Connection:
 
 class AdflyApi:
 
-    def __init__(self, secret_key, public_key, user_id, base_host='https://api.adf.ly'):
+    def __init__(self, user_id, public_key, secret_key, base_host='https://api.adf.ly'):
 
         self.BASE_HOST = base_host
         # TODO: Replace this with your secret key.

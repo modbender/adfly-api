@@ -1,8 +1,6 @@
 import setuptools
-from readme_renderer import rst
 with open('README.md',encoding='utf8') as readme_file:
     README = readme_file.read()
-README = open('README.md').read()
 
 setuptools.setup(
     name='adfly-api',

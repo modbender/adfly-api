@@ -3,7 +3,7 @@ import hmac
 import json
 import httplib2
 from urllib.parse import urlparse, urlsplit, urlencode, quote_plus
-
+import hashlib
 import mimetypes
 
 from io import StringIO
@@ -157,7 +157,7 @@ class Connection:
 
 class AdflyApi:
 
-    def __init__(self, user_id, public_key, secret_key, base_host='https://api.adf.ly'):
+    def __init__(self, secret_key, public_key, user_id, base_host='https://api.adf.ly'):
 
         self.BASE_HOST = base_host
         # TODO: Replace this with your secret key.
@@ -270,7 +270,7 @@ class AdflyApi:
             raise RuntimeError
 
         # Get parameter names.
-        keys = params.keys()
+        keys = list(params.keys())
         # Sort them using byte ordering.
         # So 'param[10]' comes before 'param[2]'.
         keys.sort()
@@ -288,8 +288,8 @@ class AdflyApi:
             queryParts.append('%s=%s' % (quoted_key, quoted_value))
 
         return hmac.new(
-            self.SECRET_KEY,
-            '&'.join(queryParts),
+            self.SECRET_KEY.encode(),
+            '&'.join(queryParts).encode(),
             hashlib.sha256).hexdigest()
 
 if __name__ == '__main__':

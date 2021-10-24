@@ -160,11 +160,11 @@ class AdflyApi:
     def __init__(self, secret_key, public_key, user_id, base_host='https://api.adf.ly'):
 
         self.BASE_HOST = base_host
-        # TODO: Replace this with your secret key.
+
         self.SECRET_KEY = secret_key
-        # TODO: Replace this with your public key.
+
         self.PUBLIC_KEY = public_key
-        # TODO: Replace this with your user id.
+
         self.USER_ID = user_id
         self.AUTH_TYPE = dict(basic=1, hmac=2)
 

@@ -5,9 +5,9 @@
 [![Downloads](https://pepy.tech/badge/adfly-api/week)](https://pepy.tech/project/adfly-api/week)
 
 Unofficial Adfly API Python Wrapper
-## geting API credentials
 
-To get and generate keys you should visit [this](https://adf.ly/publisher/tools#tools-api)
+## Obtaining API Credentials
+To generate keys you should visit [here](https://adf.ly/publisher/tools#tools-api)
 
 ## Installation
 `pip install adfly-api`

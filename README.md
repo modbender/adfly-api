@@ -6,6 +6,12 @@
 
 Unofficial Adfly API Python Wrapper
 
+## &#x1F534; Status &#x1F534;
+- Adf.ly joined [Linkvertise](https://linkvertise.com) as it was announced on their [Youtube Video](https://www.youtube.com/watch?v=EtjayoaWXg0)
+- Linkvertise, unlike Adf.ly does not provide API endpoint instead has something called [Full Script API](https://blog.linkvertise.com/en/publisher/integrate-full-script-api/)
+- Since Adf.ly is now down and no longer usable, this package and it's source code is invalid and archieved
+- You are free fork or use this source code however you want.
+
 ## Obtaining API Credentials
 To generate keys you should visit [here](https://adf.ly/publisher/tools#tools-api)
 
